@@ -1,1 +1,45 @@
+package corejava.compare;
+import java.util.Arraylist;
+import java.util.Collections;
+import java.util.List;
 
+public class Employee 
+{
+private int id = -1;
+private String name = nul;
+private String address = null;
+private int salary =-1;
+
+public Employee (int id, String name, String address, int salary) {
+this.id = id;
+this.name= name;
+this.address = address;
+}
+public String toString() {
+return "Employee: "+id+" - "+name+" - "+address+" - " +salary+"n"; 
+}
+}
+public class sorting {
+  public static void main(String[] args) {
+  Employee e1 = new Employee(1,"john","chennai",15000);
+  Employee e2 = new Employee(2,"ram","erode",35000);
+  Employee e3 = new Employee(3,"ravi","mumbai",25000);
+  Employee e4 = new Employee(4,"sri","salem",40000);
+  
+  List<Employee> employees = new ArrayList<Employee>();
+  employees.add(e1);
+  employees.add(e2);
+  employees.add(e3);
+  employees.add(e4);
+  
+  Collections.sort(employee, new SalarySorter());
+  
+  //*public class SalarySorter implements Comparator<Employee> {
+  piblic int compare (Employee 1, Empoyee 2) {
+  return 1.gwtSalary()- 2.getSalary();
+  }
+  }*//
+  
+  System.out.println(employees);
+  }
+  }
