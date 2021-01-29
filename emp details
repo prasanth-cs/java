@@ -36,7 +36,7 @@ public class sorting {
   
   //*public class SalarySorter implements Comparator<Employee> {
   piblic int compare (Employee 1, Empoyee 2) {
-  return 1.gwtSalary()- 2.getSalary();
+  return 1.getSalary()- 2.getSalary();
   }
   }*//
   
