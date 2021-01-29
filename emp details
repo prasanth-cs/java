@@ -27,10 +27,10 @@ public class sorting {
   Employee e4 = new Employee(4,"sri","salem",40000);
   
   List<Employee> employees = new ArrayList<Employee>();
+  employees.add(e4);
   employees.add(e1);
   employees.add(e2);
   employees.add(e3);
-  employees.add(e4);
   
   Collections.sort(employee, new SalarySorter());
   
