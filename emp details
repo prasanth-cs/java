@@ -43,3 +43,31 @@ public class sorting {
   System.out.println(employees);
   }
   }
+  
+  
+  
+  
+  
+  
+  
+  Create a VM from azure portal with Visual Studio 2017 installed.  Enter “Visual Studio” on the top search bar on the portal – Select Visual Studio in the Market Place to see the next screen as below.
+ 
+1.	Select Visual Studio Community 2017 on Windows Server 16 (x64) from the combo box.
+2.	Click on Create that will take you to the basic tab of VM creation. 
+a.	Enter an new resource group name as “dev” . 
+b.	Fill in the name of the VM as you like. Region as East US and the rest of the fields.
+c.	For inbound ports Ensure RDP/SSH/HTTP/HTTPS ports are enabled.
+d.	Let the license type be “Windows server”.
+e.	In the Disk tab ensure disk type is “Standard SSD”
+f.	Ensure you disable Boot diagnostics. ( OFF).
+3.	Review + Create - > Create. VM will be ready in next 5- 10 minutes.
+4.	RDP to it once its ready. You will see this VM will have VS 2017 installed  on it. 
+5.	You need to change the IE settings to enable download of software on the VM –
+a.	 Go to IE setting – Security tab - > Custom Level -> File Download -> Enable..  With this change you should be able to download software on the VM.
+6.	On the VM Install .Net Core 3.1 from the link https://dotnet.microsoft.com/download/dotnet-core/3.1. You need to download Windows ( x64) version . Install the software.
+7.	Install AZ CLI .  From the link https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest  Download the MSI and install it on the VM.
+8.	Install Azure Function App Core tools from https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#v2 . Download and install V3.x  Windows X64 version. 
+9.	Install HTTPREPL utility by executing following command on the windows command prompt (CMD)  .   “dotnet tool install -g Microsoft.dotnet-httprepl”
+10.	Install Chrome browser. 
+11.	Download the lab code for all the labs using chrom browser at “https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure”
+
